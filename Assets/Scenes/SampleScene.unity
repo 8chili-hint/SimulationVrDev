@@ -2372,6 +2372,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SimulationRig OG
       objectReference: {fileID: 0}
+    - target: {fileID: 3315997065370946084, guid: 3bb81e5eeaad7fb438908f6486a3318e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7660507240822753419, guid: 3bb81e5eeaad7fb438908f6486a3318e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
