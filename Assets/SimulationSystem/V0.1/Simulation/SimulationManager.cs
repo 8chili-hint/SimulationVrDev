@@ -13,6 +13,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using SimpleJSON;
+using UnityEngine.Events;
 namespace SimulationSystem.V0._1.Simulation
 {
     public class SimulationManager : MonoBehaviour
@@ -38,7 +39,6 @@ namespace SimulationSystem.V0._1.Simulation
         private UIImageHandler _stateChangeCountdownUIImageHandler;
 
         private Timer _stateChangeCountdownTimer;
-
         
 
 
@@ -85,6 +85,10 @@ namespace SimulationSystem.V0._1.Simulation
         [Header("General Component Overrides")]
         public DetectVizmode TurnOffDetectVizUsing = DetectVizmode.FirstChild;
         public bool GrabbableShouldNotResetInItsRespectiveStep;
+
+
+        [Header("This is called on Awake//On Start Of the Scene")]
+        public UnityEvent OnSimulationSceneBegin;
         #endregion
 
         #region Monobehaviour
